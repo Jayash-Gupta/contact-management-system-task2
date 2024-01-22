@@ -67,8 +67,8 @@ const ContactList = ({ filter: { name, date, countryCode, phoneNumber } }) => {
           </tr>
         </thead>
         <tbody>
-          {filteredContacts.map((contact) => (
-            <ContactRow key={contact._id} contact={contact} />
+          {filteredContacts.map((contact, index) => (
+            <ContactRow key={contact._id} contact={contact} index={index} />
           ))}
         </tbody>
       </table>
