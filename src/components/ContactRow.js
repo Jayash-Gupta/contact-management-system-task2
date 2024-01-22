@@ -1,7 +1,7 @@
 import React from "react";
 
 const ContactRow = ({ contact, index }) => {
-  css = index % 2 == 0 ? "" : "#C5C6D0";
+  const css = index % 2 == 0 ? "" : "#C5C6D0";
   return (
     <tr style={{ background: css }}>
       <td>{contact.name}</td>
